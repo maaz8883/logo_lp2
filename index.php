@@ -10,85 +10,24 @@
 <link rel="stylesheet" href="assets/css/layout.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/locomotive-scroll.min.css">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+<link rel="shortcut icon" href="/assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+<link rel="manifest" href="/assets/site.webmanifest" />
 
-    
-    
+
+
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KW7SCQJP');</script>
+<!-- End Google Tag Manager -->
 </head>
 
 <style>
-/*    img.tag {*/
-/*        position: absolute;*/
-/*        right: -5vw;*/
-/*        top: -2vw;*/
-/*    }*/
-/*    .banner-form h2 {*/
-/*        text-align: left;*/
-/*    }*/
-
-
-/*@media only screen and (min-width : 1199px) and (max-width : 1440px){*/
-/*    .banner-form {*/
-/*        align-items: flex-start;*/
-/*    }*/
-/*    img.tag {*/
-/*        position: relative;*/
-/*        right: 0;*/
-/*        top: 0;*/
-/*        margin: 0 auto;*/
-/*        display: flex;*/
-/*    }*/
-    
-/*}*/
-
-
-/*@media only screen and (min-width : 992px) and (max-width : 1199px){*/
-/*    .banner-form {*/
-/*        align-items: flex-start;*/
-/*    }*/
-/*    img.tag {*/
-/*        position: relative;*/
-/*        right: 0;*/
-/*        top: 0;*/
-/*        margin: 0 auto;*/
-/*        display: flex;*/
-/*    }*/
-    
-/*}*/
-
-
-/*@media only screen and (min-width : 768px) and (max-width : 991px){*/
-/*    .banner-form {*/
-/*        align-items: flex-start;*/
-/*    }*/
-/*    img.tag {*/
-/*        position: absolute;*/
-/*        right: -1vw;*/
-/*        top: -6vw;*/
-        
-/*    }*/
-    
-/*}*/
-
-/*@media only screen and (min-width : 280px) and (max-width : 767px){*/
-/*    img.tag {*/
-/*        position: relative;*/
-/*        right: 0;*/
-/*        top: 0;*/
-/*        text-align: center;*/
-/*        margin: 0 auto;*/
-/*        display: flex;*/
-/*    }*/
-/*}*/
-
-
-/*.mmpopup-new .centercont {*/
-/*  padding: 0px 0px 20px 0px;*/
-/*}*/
-
-
-
 
 
 /*christmas theme*/
@@ -197,18 +136,95 @@ img.vector10 {
     }
     
 }
+.ts-video-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
 
+.ts-video-box {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16/9;
+  background: #000;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #2a2a2a;
+}
 
+.ts-video-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+  display: block;
+}
 
+.ts-thumbnail-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  z-index: 1;
+}
 
+.ts-video-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+}
 
+.ts-video-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 
 
 
 </style>
 
 
-<body>
+
+
+    <body>
+
+               <!-- Start of LiveChat (www.livechat.com) code -->
+<script>
+    window._lc = window._lc || {};
+    window.__lc.license = 19454392;
+    window.__lc.integration_name = "manual_onboarding";
+    window.__lc.product_name = "livechat";
+    ;(function(n,t,c){function i(n){return e.h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n._lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+</script>
+<!-- End of LiveChat code -->
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".open-livechat").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (window.LiveChatWidget) {
+        LiveChatWidget.call("maximize");
+      }
+    });
+  });
+});
+</script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KW7SCQJP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <header>
     <div class="main-header">
         <div class="container">
@@ -251,8 +267,8 @@ img.vector10 {
                                 <a href="javascript:;" class=""><img src="assets/images/chat.png" alt="">Live Chat</a>
                             </li>
                             <li>
-                                <a href="tel:+12792251157" class=""><img src="assets/images/call.png"
-                                        alt="">(279) 225-1157</a>
+                                <a href="tel:+12792251157" class="">
+                                    <img src="assets/images/call.png"  alt="">(279) 225-1157</a>
                             </li>
                             <li>
                                 <a href="javascript:;" class="header-btn text-white popstatic"> Get Started Now </a>
@@ -266,8 +282,7 @@ img.vector10 {
         </div>
     </div>
 </header>    
-    <!--<div class="mainBanner" data-scroll data-scroll-event-progress="progressEvent" style="background-image:url(assets/images/banner/newyear-banner.png)">-->
-        
+
     <div class="mainBanner" data-scroll data-scroll-event-progress="progressEvent">
         
         <div class="container">
@@ -301,15 +316,13 @@ img.vector10 {
 
                         <div class="btn-wrap">
                             <a href="javascript:;" class="theme-btn popstatic pulse">GET STARTED </a>
-                            <a href="javascript:;" class="theme-btn green pulse" title="Live Chat" target="_self" onclick="setButtonURL();">CHAT NOW</a>
+                            <a href="javascript:;" class="theme-btn green pulse open-livechat" title="Live Chat" target="_self">CHAT NOW</a>
                         </div>
                         <img src="assets/images/ban-trust.webp" alt="">
                     </div>
                     <div class="col-lg-5 position-relative">
                        
-                      <!-- <div class="tags-img">
-                          <img src="assets/images/newyear-theme/tags.webp">
-                      </div> -->
+                      
 
 
                       
@@ -317,11 +330,8 @@ img.vector10 {
 
                        
                         <form onsubmit="selectPackage('Basic', 35); submitStep1(event)" class="banner-form">
-                    <!-- <form id="popupform4" action="sending.php" method="POST" class="banner-form"> -->
-                        <!-- <input type="hidden" id="package_html" name="package_html" class="package_html" value="4 Logo Concepts -->
-                                                                                                                5 Revisions
-                                                                                                                24/7 Expert Support">
-                        <h2>Get <span>70%</span> Off On Your First Order</h2>
+                  
+                        <h2>Get <span>80%</span> Off On Your First Order</h2>
                         <div class="form-input">
                             <input type="text" id="name" name="name" placeholder="Name" required="required">
                         </div>
@@ -570,23 +580,7 @@ img.vector10 {
                             </select> <input type="text" name="countrycode" class="countrycode" id="countrycode"
                                 readonly="" value="+1">
                             <input type="text" name="phone" placeholder="" required class="phone-field">
-                            <!-- <input type="hidden" name="package_name" value="Basic">
-                            <input type="hidden" name="package_cost" value="$35">
-                            <input type="hidden" name="package_cat" value="logo">
-                            <input type="hidden" name="lead_source" value="banner">
-                            <input type="hidden" name="full_url" id="" value="index.html">
-                            <input type="hidden" name="msclkid" value="">
-                            <input type="hidden" name="gclid" value="">
-                            <input type="hidden" name="fbclid" value="">
-                            <input type="hidden" name="__keyword" value="">
-                            <input type="hidden" name="__device" value="">
-                            <input type="hidden" name="__utm_source" value="">
-                            <input type="hidden" name="__utm_campaign" value="">
-                            <input type="hidden" name="__utm_content" value="">
-                            <input type="hidden" name="__utm_term" value="">
-                            <input type="hidden" name="__matchtype" value="">
-                            <input type="hidden" name="__adgroupid" value="">
-                            <input type="hidden" name="__gad_source" value=""> -->
+                           
                         </div>
                         
                         <div class="form-input">
@@ -619,30 +613,17 @@ img.vector10 {
     </div>
 
     <div class="horizotal-form">
-        <!--<div class="thanksgiving-tag">-->
-        <!--    <img class="vector1 z-1" src="assets/images/banner/form-elm-left.png" alt="">-->
-        <!--    <img class="vector2 z-1" src="assets/images/banner/form-elm-right.png" alt="">-->
-        <!--</div>-->
+       
         <div class="container z-2">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="sec-heading center">
-                        <h2>Get Up to <span class="orange">70%</span> Off On Your First Order </h2>
+                        <h2>Get Up to <span class="orange">80%</span> Off On Your First Order </h2>
                     </div>
                 </div>
             </div>
             <form onsubmit="selectPackage('Basic', 35); submitStep1(event)">
-            <!-- <form id="popupform3" class="dynamic-form"> -->
-                <!-- <input type="hidden" id="package_html" name="package_html" class="package_html" value="4 Logo Concepts -->
-                                                                                                                <!-- 5 Revisions
-                                                                                                                1 Dedicated Designer
-                                                                                                                Free Color Options
-                                                                                                                Free Grayscale Format
-                                                                                                                24-48 Hours TAT
-                                                                                                                File Formats (JPG)
-                                                                                                                100% Ownership Rights
-                                                                                                                100% Money-back Guarantee
-                                                                                                                24/7 Expert Support"> -->
+            
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="fld-input ht-auto">
@@ -658,22 +639,7 @@ img.vector10 {
                     <div class="col-lg-3">
                         <div class="fld-input ht-auto">
                             <input type="number" id="phoneNum3" name="phone" placeholder="Phone Number" required="required">
-                            <!-- <input type="hidden" name="package_name" value="Basic">
-                            <input type="hidden" name="package_cost" value="$35">
-                            <input type="hidden" name="package_cat" value="logo">
-                            <input type="hidden" name="full_url" id="" value="index.html">
-                            <input type="hidden" name="msclkid" value="">
-                            <input type="hidden" name="gclid" value="">
-                            <input type="hidden" name="fbclid" value="">
-                            <input type="hidden" name="__keyword" value="">
-                            <input type="hidden" name="__device" value="">
-                            <input type="hidden" name="__utm_source" value="">
-                            <input type="hidden" name="__utm_campaign" value="">
-                            <input type="hidden" name="__utm_content" value="">
-                            <input type="hidden" name="__utm_term" value="">
-                            <input type="hidden" name="__matchtype" value="">
-                            <input type="hidden" name="__adgroupid" value="">
-                            <input type="hidden" name="__gad_source" value=""> -->
+                           
                         </div>
                     </div>
                     <div class="col-lg-3">
@@ -810,7 +776,7 @@ img.vector10 {
                 <a href="javascript:;" class="normal-link">Ready to get started? Get in touch with us. </a>
                 <div class="btn-wrap justify-content-center">
                     <a href="javascript:;" class="theme-btn popstatic pulse">Get Started</a>
-                    <a href="javascript:;" class="theme-btn green pulse" title="Live Chat" target="_self"
+                    <a href="javascript:;" class="theme-btn green pulse open-livechat" title="Live Chat" target="_self"
                         onclick="setButtonURL();">Chat with an Expert</a>
                 </div>
             </div>
@@ -845,15 +811,11 @@ img.vector10 {
                                     <div class="price">
                                         <span class="amount">$35</span>
                                         <span class="offer">
-                                            <del>$175</del> 70% Off!
+                                            <del>$175</del> 80% Off!
                                         </span>
                                     </div>
 
-                                    <!--<div class="chat-btn justify-content-center">-->
-                                    <!--    <a href="javascript:;" class="theme-btn w-100 text-center green"-->
-                                    <!--        title="Live Chat" target="_self" onclick="setButtonURL();">Chat with an-->
-                                    <!--        Expert</a>-->
-                                    <!--</div>-->
+                                   
                                 </div>
                                 <div class="bottom">
                                     <span class="hdng">PACKAGE INCLUDES:</span>
@@ -888,15 +850,11 @@ img.vector10 {
                                     <div class="price">
                                         <span class="amount">$75</span>
                                         <span class="offer">
-                                            <del>$375</del> 70% Off!
+                                            <del>$375</del> 80% Off!
                                         </span>
                                     </div>
 
-                                    <!--<div class="chat-btn justify-content-center">-->
-                                    <!--    <a href="javascript:;" class="theme-btn w-100 text-center green"-->
-                                    <!--        title="Live Chat" target="_self" onclick="setButtonURL();">Chat with an-->
-                                    <!--        Expert</a>-->
-                                    <!--</div>-->
+                                    
                                 </div>
                                 <div class="bottom">
                                     <span class="hdng">PACKAGE INCLUDES:</span>
@@ -934,15 +892,11 @@ img.vector10 {
                                     <div class="price">
                                         <span class="amount">$125</span>
                                         <span class="offer">
-                                            <del>$625</del> 70% Off!
+                                            <del>$625</del> 80% Off!
                                         </span>
                                     </div>
 
-                                    <!--<div class="chat-btn justify-content-center">-->
-                                    <!--    <a href="javascript:;" class="theme-btn w-100 text-center green"-->
-                                    <!--        title="Live Chat" target="_self" onclick="setButtonURL();">Chat with an-->
-                                    <!--        Expert</a>-->
-                                    <!--</div>-->
+                                    
                                 </div>
                                 <div class="bottom">
                                     <span class="hdng">PACKAGE INCLUDES:</span>
@@ -983,15 +937,11 @@ img.vector10 {
                                     <div class="price">
                                         <span class="amount">$199</span>
                                         <span class="offer">
-                                            <del>$995</del> 70% Off!
+                                            <del>$995</del> 80% Off!
                                         </span>
                                     </div>
 
-                                    <!--<div class="chat-btn justify-content-center">-->
-                                    <!--    <a href="javascript:;" class="theme-btn w-100 text-center green"-->
-                                    <!--        title="Live Chat" target="_self" onclick="setButtonURL();">Chat with an-->
-                                    <!--        Expert</a>-->
-                                    <!--</div>-->
+                                   
                                 </div>
                                 <div class="bottom">
                                     <span class="hdng">PACKAGE INCLUDES:</span>
@@ -1006,9 +956,12 @@ img.vector10 {
                                         <li>Double Side Flyer (OR) Bi-Fold Brochure</li>
                                         <li>Free MS Electronic Letterhead</li>
                                         <li>Email Signature Design</li>
-                                        <li>$50 Off on Website Order</li>
+                                        <li>$50 Off on Complete Website Order</li>
                                         <li>48-72 Hours TAT</li>
                                         <li>File Formats (AI, PSD, EPS, PNG, JPG, PDF)</li>
+                                        <li>Invoice Design</li>
+                                        <li>Ownership Certificate</li>
+                                        <li>Homepage Website Design</li>
                                         <li>100% Satisfaction Guarantee</li>
                                         <li>100% Unique Design Guarantee</li>
                                         <li>100% Money-back Guarantee</li>
@@ -1033,15 +986,10 @@ img.vector10 {
                                     <div class="price">
                                         <span class="amount">$299</span>
                                         <span class="offer">
-                                            <del>$1495</del> 70% Off!
+                                            <del>$1495</del> 80% Off!
                                         </span>
                                     </div>
 
-                                    <!--<div class="chat-btn justify-content-center">-->
-                                    <!--    <a href="javascript:;" class="theme-btn w-100 text-center green"-->
-                                    <!--        title="Live Chat" target="_self" onclick="setButtonURL();">Chat with an-->
-                                    <!--        Expert</a>-->
-                                    <!--</div>-->
                                 </div>
                                 <div class="bottom">
                                     <span class="hdng">PACKAGE INCLUDES:</span>
@@ -1056,9 +1004,13 @@ img.vector10 {
                                         <li>Bi-Fold Brochure Flyer (OR) Tri-Fold Brochure</li>
                                         <li>Free MS Electronic Letterhead</li>
                                         <li>Email Signature Design</li>
-                                        <li>$50 Off on Website Order</li>
+                                        <li>$50 Off on Complete Website Order</li>
                                         <li>48-72 Hours TAT</li>
                                         <li>File Formats (AI, PSD, EPS, PNG, JPG, PDF)</li>
+                                        <li>Complete Branding Guide</li>
+                                        <li>QR Code</li>
+                                        <li>Professional Email Account Setup</li>
+                                        <li>1 Page Static Website Fully Functional</li>
                                         <li>100% Satisfaction Guarantee</li>
                                         <li>100% Unique Design Guarantee</li>
                                         <li>100% Money-back Guarantee</li>
@@ -1083,15 +1035,11 @@ img.vector10 {
                                     <div class="price">
                                         <span class="amount">$499</span>
                                         <span class="offer">
-                                            <del>$2495</del> 70% Off!
+                                            <del>$2495</del> 80% Off!
                                         </span>
                                     </div>
 
-                                    <!--<div class="chat-btn justify-content-center">-->
-                                    <!--    <a href="javascript:;" class="theme-btn w-100 text-center green"-->
-                                    <!--        title="Live Chat" target="_self" onclick="setButtonURL();">Chat with an-->
-                                    <!--        Expert</a>-->
-                                    <!--</div>-->
+                                  
                                 </div>
                                 <div class="bottom">
                                     <span class="hdng">PACKAGE INCLUDES:</span>
@@ -1099,16 +1047,20 @@ img.vector10 {
                                         <li>Unlimited Custom Logo Design Concepts</li>
                                         <li>8 Award Winning Designers</li>
                                         <li>Unlimited Revisions</li>
-                                        <li>1 Website Prototype</li>
                                         <li>Free Icon Design</li>
                                         <li>Free Custom Stationery Design (Letterhead, Business Card, Envelope, Invoice)
                                         </li>
                                         <li>Z-Fold Flyer</li>
                                         <li>Free MS Electronic Letterhead</li>
                                         <li>Email Signature Design</li>
-                                        <li>$50 Off on Website Order</li>
                                         <li>48-72 Hours TAT</li>
                                         <li>File Formats (AI, PSD, EPS, PNG, JPG, PDF)</li>
+                                        <li>3 Page Static Website</li>
+<li>Web Icon</li>
+<li>Ownership Certificate</li>
+<li>Complete Brand Guide</li>
+<li>Professional Email Account Setup</li>
+<li>Logo Animation (1 Design)</li>
                                         <li>100% Satisfaction Guarantee</li>
                                         <li>100% Unique Design Guarantee</li>
                                         <li>100% Money-back Guarantee</li>
@@ -1232,7 +1184,7 @@ img.vector10 {
             </div>
             <div class="btn-wrap justify-content-center">
                 <a href="javascript:;" class="theme-btn popstatic pulse">Get Started</a>
-                <a href="javascript:;" class="theme-btn green pulse" title="Live Chat" target="_self"
+                <a href="javascript:;" class="theme-btn green pulse open-livechat" title="Live Chat" target="_self"
                     onclick="setButtonURL();">Chat with an Expert</a>
             </div>
         </div>
@@ -1300,7 +1252,7 @@ img.vector10 {
             </div>
             <div class="btn-wrap justify-content-center">
                 <a href="javascript:;" class="theme-btn popstatic pulse">Get Started</a>
-                <a href="javascript:;" class="theme-btn green pulse" title="Live Chat" target="_self"
+                <a href="javascript:;" class="theme-btn green pulse open-livechat" title="Live Chat" target="_self"
                     onclick="setButtonURL();">Chat with an Expert</a>
             </div>
         </div>
@@ -1374,7 +1326,7 @@ img.vector10 {
 
             <div class="btn-wrap justify-content-center">
                 <a href="javascript:;" class="theme-btn popstatic pulse">Get Started</a>
-                <a href="javascript:;" class="theme-btn green pulse" title="Live Chat" target="_self"
+                <a href="javascript:;" class="theme-btn green pulse open-livechat" title="Live Chat" target="_self"
                     onclick="setButtonURL();">Chat with an Expert</a>
             </div>
         </div>
@@ -1419,34 +1371,14 @@ img.vector10 {
                             With our experts by your side, you’ll enjoy a straightforward and seamless experience from
                             start to finish.
                         </p>
-                        <!-- <a href="javascript:;" class="underline-link">Learn More <i class="fa fa-arrow-right"></i></a> -->
                         <div class="btn-wrap underline-link">
                             <a href="javascript:;" class="theme-btn popstatic pulse">Get Started</a>
-                            <a href="javascript:;" class="theme-btn green pulse" title="Live Chat" target="_self"
+                            <a href="javascript:;" class="theme-btn green pulse open-livechat" title="Live Chat" target="_self"
                                 onclick="setButtonURL();">Chat with an Expert</a>
                         </div>
                     </div>
                 </div>
-                <!--<div class="col-lg-5 offset-lg-1">-->
-                <!--    <div class="process-wrap" data-scroll data-scroll-event-progress="progressEvent">-->
-                <!--        <span class="line"></span>-->
-                <!--        <div class="process-card">-->
-                <!--            <h3>Step 1: Place the Order</h3>-->
-                <!--            <p>Speak to one of our consultants, fill out the brief, and place your logo order.</p>-->
-                <!--            <img src="assets/images/process/1.webp" alt="">-->
-                <!--        </div>-->
-                <!--        <div class="process-card">-->
-                <!--            <h3>Step 2: Review the Design Draft</h3>-->
-                <!--            <p>Receive your initial design draft and provide feedback for any necessary changes.</p>-->
-                <!--            <img src="assets/images/process/2.webp" alt="">-->
-                <!--        </div>-->
-                <!--        <div class="process-card">-->
-                <!--            <h3>Step 3: Adjustments and Finalize</h3>-->
-                <!--            <p>We’ll refine your design based on feedback until you’re completely satisfied.</p>-->
-                <!--            <img src="assets/images/process/3.webp" alt="">-->
-                <!--        </div>-->
-                <!--    </div>-->
-                <!--</div>-->
+               
                 
                 <div class="col-lg-5 offset-lg-1">
                     <div class="hSec1-full">
@@ -1504,6 +1436,14 @@ img.vector10 {
                     </div>
                 </div>
             </div>
+                <div class="ts-video-wrap">
+  <div class="ts-video-box">
+    <video id="tsClientVideo" src="https://logoelementdesign.com/lp/assets/testi.mp4" playsinline controls style="display:none;width:100%;height:100%;object-fit:cover;"></video>
+    <img id="tsThumbnail" class="ts-thumbnail-img" src="https://logoelementdesign.com/lp/assets/images/30551474-b854-4fcd-8594-ca8e1f967060.png" alt="Video thumbnail" />
+    <div class="ts-video-overlay" id="tsVideoOverlay" onclick="tsPlayVideo()">
+    </div>
+  </div>
+</div>
             <div class="rating-wrap" style="background-image:url(assets/images/testi-banner.jpg)">
                 <div class="testimonials">
                     <div>
@@ -1718,7 +1658,6 @@ img.vector10 {
                         <div class="footer-form">
                     <form  onsubmit="selectPackage('Basic', 35); submitStep1(event)">
 
-                            <!-- <form action="https://www.superiorlogodesigns.com/crm/include/offercontact.php" method="GET"> -->
                                 <div class="f-field">
                                     <input type="text" placeholder="First Name*" name="name" required="required">
                                 </div>
@@ -1727,20 +1666,7 @@ img.vector10 {
                                 </div>
                                 <div class="f-field">
                                     <input type="text" placeholder="Phone Number*" name="phone" required="required">
-                                    <!-- <input type="hidden" name="leadsource" value="LP 7">
-                                    <input type="hidden" name="full_url" id="" value="index.html">
-                                    <input type="hidden" name="msclkid" value="">
-                                    <input type="hidden" name="gclid" value="">
-                                    <input type="hidden" name="fbclid" value="">
-                                    <input type="hidden" name="__keyword" value="">
-                                    <input type="hidden" name="__device" value="">
-                                    <input type="hidden" name="__utm_source" value="">
-                                    <input type="hidden" name="__utm_campaign" value="">
-                                    <input type="hidden" name="__utm_content" value="">
-                                    <input type="hidden" name="__utm_term" value="">
-                                    <input type="hidden" name="__matchtype" value="">
-                                    <input type="hidden" name="__adgroupid" value="">
-                                    <input type="hidden" name="__gad_source" value=""> -->
+                                   
                                 </div>
                                 <div class="f-field">
                                     <textarea name="message" id="" placeholder="Message" required="required"></textarea>
@@ -1791,7 +1717,7 @@ img.vector10 {
             <div class="row">
                 <div class="col-lg-12">
                     <div class="wrap">
-                        <p>Copyright © 2024 Logo Element Design | All rights reserved.
+                        <p>Copyright © 2026 Logo Element Design | All rights reserved.
                             <a href="https://logoelementdesign.com/terms-conditions/" Target="blank">Terms & Conditions</a> | <a href="https://logoelementdesign.com/privacy-policy/" Target="blank">Privacy Policy</a>
                         </p>
                         <img src="assets/images/visa.webp" alt="">
@@ -1805,7 +1731,6 @@ img.vector10 {
 <script src="assets/js/locomotive-scroll.min.js"></script>
 <script src="assets/js/gsap.min.js"></script>
 <script src="assets/js/ScrollTrigger.min.js"></script>
-
 <script src="assets/js/custom.js"></script>
 
 <script>
@@ -1879,9 +1804,7 @@ window.addEventListener("progressEvent", (e) => {
              <img src="assets/images/popup-image1.webp" alt="">
         </div>
         <div class="centercont">
-            <!-- <div class="tags-image">
-                <img src="assets/images/newyear-theme/tags.webp" alt="">
-            </div> -->
+          
             <h3>Get Custom Logo Design</h3>
             <h4>starting at <span>$35</span> only</h4>
             <p>Get Started with Customized Logo Designs & Deliver Your Brand Message Effectively </p>
@@ -1899,23 +1822,12 @@ window.addEventListener("progressEvent", (e) => {
                 <a href="tel:+12792251157" title="" class="phone-num-script">(279) 225-1157</a>
                 
                 <div class="pop-vector-img">
-               <!--<img src="assets/images/christmas-theme/pop-vector.webp" alt="" class="pop-vector">-->
             </div>
             </div>
         </div>
         <div class="formpop">
                         <form onsubmit="selectPackage('Basic', 35); submitStep1(event)">
-            <!-- <form id="popupform6" method="POST" action="https://www.superiorlogodesigns.com/lp7/crm/signup.php"> -->
-                <!-- <input type="hidden" id="package_html" name="package_html" class="package_html" value="4 Logo Concepts -->
-                                                                                                        <!-- 5 Revisions
-                                                                                                        1 Dedicated Designer
-                                                                                                        Free Color Options
-                                                                                                        Free Grayscale Format
-                                                                                                        24-48 Hours TAT
-                                                                                                        File Formats (JPG)
-                                                                                                        100% Ownership Rights
-                                                                                                        100% Money-back Guarantee
-                                                                                                        24/7 Expert Supporte"> -->
+           
                 <div class="fld-input">
                     <input type="text" id="name" name="name" placeholder="Name" required="required">
                 </div>
@@ -1925,22 +1837,7 @@ window.addEventListener("progressEvent", (e) => {
                 <div class="fld-input">
                     <input type="number" id="phoneNum2" name="phone" placeholder="Phone Number"
                         required="required">
-                    <!-- <input type="hidden" name="package_name" value="Basic">
-                    <input type="hidden" name="package_cost" value="$35">
-                    <input type="hidden" name="package_cat" value="logo">
-                    <input type="hidden" name="full_url" id="" value="index.html">
-                    <input type="hidden" name="msclkid" value="">
-                    <input type="hidden" name="gclid" value="">
-                    <input type="hidden" name="fbclid" value="">
-                    <input type="hidden" name="__keyword" value="">
-                    <input type="hidden" name="__device" value="">
-                    <input type="hidden" name="__utm_source" value="">
-                    <input type="hidden" name="__utm_campaign" value="">
-                    <input type="hidden" name="__utm_content" value="">
-                    <input type="hidden" name="__utm_term" value="">
-                    <input type="hidden" name="__matchtype" value="">
-                    <input type="hidden" name="__adgroupid" value="">
-                    <input type="hidden" name="__gad_source" value=""> -->
+                   
                 </div>
                 
                 <div class="fld-input">
@@ -1958,7 +1855,7 @@ window.addEventListener("progressEvent", (e) => {
                     </div>
                     <div class="checkbox-wrap2">
                         <input type="checkbox" id="check3" required name="check3">
-                        <label style="color: black;" for="check3"> I agree and accepts <a target="_blank" href="terms.html" >Terms & Conditions</a> and  <a target="_blank" href="privacy-policy.html"  >Privacy Policy</a></label>
+                        <label style="color: black;" for="check3"> I agree and accepts <a target="_blank" href="https://logoelementdesign.com/terms-conditions/" >Terms & Conditions</a> and  <a target="_blank" href="https://logoelementdesign.com/privacy-policy/"  >Privacy Policy</a></label>
                     </div>
                 </div>
                 
@@ -1980,9 +1877,7 @@ window.addEventListener("progressEvent", (e) => {
              <img src="assets/images/popup-image1.webp" alt="">
         </div>
         <div class="centercont dynamic-popup">
-            <!-- <div class="tags-image">
-                <img src="assets/images/newyear-theme/tags.webp" alt="">
-            </div> -->
+           
             <h3>Get Custom Logo Design</h3>
             <h4>starting at <span>$35</span> only</h4>
             <p>Get Started with Customized Logo Designs & Deliver Your Brand Message Effectively </p>
@@ -2000,21 +1895,12 @@ window.addEventListener("progressEvent", (e) => {
                 <a href="tel:+12792251157" title="" class="phone-num-script">(279) 225-1157</a>
                 
                 <div class="pop-vector-img">
-               <!--<img src="assets/images/christmas-theme/pop-vector.webp" alt="" class="pop-vector">-->
             </div>
             </div>
         </div>
         <div class="formpop">
             <form id="popupform"  onsubmit="submitStep1(event)">
-            <!-- <form id="popupform" method="POST" action="https://www.superiorlogodesigns.com/lp7/crm/signup.php"> -->
-                <!-- <input type="hidden" id="package_html" name="package_html" class="package_html" value="5 Revisions
-                                        1 Dedicated Designer
-                                        Free Color Options
-                                        Free Grayscale Format
-                                        Quick 24-48 Hrs TAT
-                                        All File Formats 
-                                        100% Ownership Rights
-                                        100% Money Back Guarantee"> -->
+           
                 <div class="fld-input">
                     <input type="text" id="name" name="name" placeholder="Name" required="required">
                 </div>
@@ -2024,22 +1910,6 @@ window.addEventListener("progressEvent", (e) => {
                 <div class="fld-input">
                     <input type="number" id="phoneNum2" name="phone" placeholder="Phone Number"
                         required="required">
-                    <input type="hidden" name="package_name" value="Basic">
-                    <input type="hidden" name="package_cost" value="$35">
-                    <input type="hidden" name="package_cat" value="logo">
-                    <input type="hidden" name="full_url" id="" value="index.html">
-                    <input type="hidden" name="msclkid" value="">
-                    <input type="hidden" name="gclid" value="">
-                    <input type="hidden" name="fbclid" value="">
-                    <input type="hidden" name="__keyword" value="">
-                    <input type="hidden" name="__device" value="">
-                    <input type="hidden" name="__utm_source" value="">
-                    <input type="hidden" name="__utm_campaign" value="">
-                    <input type="hidden" name="__utm_content" value="">
-                    <input type="hidden" name="__utm_term" value="">
-                    <input type="hidden" name="__matchtype" value="">
-                    <input type="hidden" name="__adgroupid" value="">
-                    <input type="hidden" name="__gad_source" value="">
                 </div>
                 
                 <div class="fld-input">
@@ -2057,7 +1927,7 @@ window.addEventListener("progressEvent", (e) => {
                     </div>
                     <div class="checkbox-wrap2">
                         <input type="checkbox" id="check3" required name="check3">
-                        <label style="color: black;" for="check3"> I agree and accepts <a target="_blank" href="terms.html" >Terms & Conditions</a> and  <a target="_blank" href="privacy-policy.html"  >Privacy Policy</a></label>
+                        <label style="color: black;" for="check3"> I agree and accepts <a target="_blank" href="https://logoelementdesign.com/terms-conditions/" >Terms & Conditions</a> and  <a target="_blank" href="https://logoelementdesign.com/privacy-policy/"  >Privacy Policy</a></label>
                     </div>
                 </div>
                 
@@ -2073,28 +1943,15 @@ window.addEventListener("progressEvent", (e) => {
 
 <!--exit popup-->
 <div class="popupmain exit-popup" id="exit-popup" style="overflow:visible;overflow-y:visible;">
-    <!-- <img src="assets/images/christmas/popup-hat.png" class="popup-xmas-elem" alt=""> -->
     <a id="close1" class="closeico" href="javascript:;" title=""><i  class="fa-solid fa-xmark"></i></a>
     <div class="mmpopup">
-<!-- <div class="tags-image">
-                <img src="assets/images/newyear-theme/tags.webp" alt="">
-            </div> -->
         <div class="centercont static">
             <p>LIMITED TIME SPECIAL OFFER</p>
             <h3> Get Custom Logo for Just <span>$35!</span> </h3>
         </div>
         <div class="formpop">
             <form id="popupform7" onsubmit="selectPackage('Basic', 35); submitStep1(event)">
-            <!-- <form id="popupform7" > -->
-                <!-- <input type="hidden" id="package_html" name="package_html" class="package_html" value="4 Logo Concepts -->
-                                                                                                        <!-- 5 Revisions
-                                                                                                        1 Dedicated Designer
-                                                                                                        Free Color Options
-                                                                                                        Free Grayscale Format
-                                                                                                        Quick 24-48 Hrs TAT
-                                                                                                        All File Formats 
-                                                                                                        100% Ownership Rights
-                                                                                                        100% Money Back Guarantee"> -->
+            
                 <div class="row g-2">
                     <div class="col-md-12">
                         <div class="fld-input">
@@ -2114,23 +1971,7 @@ window.addEventListener("progressEvent", (e) => {
                     <div class="fld-input">
                             <input type="phone" id="name" name="phone" placeholder="Phone No. *"
                                 required="required">
-                                <!-- <input type="hidden" name="package_name" value="Basic">
-                                <input type="hidden" name="package_cost" value="$35">
-                                <input type="hidden" name="package_cat" value="logo">
-                                <input type="hidden" name="full_url" id="" value="index.html">
-                            <input type="hidden" name="lead_source" value="Popup Form - Auto">
-                            <input type="hidden" name="msclkid" value="">
-                            <input type="hidden" name="gclid" value="">
-                            <input type="hidden" name="fbclid" value="">
-                            <input type="hidden" name="__keyword" value="">
-                            <input type="hidden" name="__device" value="">
-                            <input type="hidden" name="__utm_source" value="">
-                            <input type="hidden" name="__utm_campaign" value="">
-                            <input type="hidden" name="__utm_content" value="">
-                            <input type="hidden" name="__utm_term" value="">
-                            <input type="hidden" name="__matchtype" value="">
-                            <input type="hidden" name="__adgroupid" value="">
-                            <input type="hidden" name="__gad_source" value=""> -->
+                               
                         </div>
                     </div>
 
@@ -2144,8 +1985,8 @@ window.addEventListener("progressEvent", (e) => {
                     <div class="col-md-12">
                         <div class="checkbox2">
                             <input class="me-2" type="checkbox" name="terms" id="terms2" required="required">
-                            <label class="" for="terms2">I agree with Superior Logo Policy and provide my consent to receive
-                                B2B marketing communications from Superior Logo Design.</label>
+                            <label class="" for="terms2">I agree with Element Design Policy and provide my consent to receive
+                                B2B marketing communications from Logo Element Design.</label>
                         </div>
                         <div class="checkbox2">
                             <input class="me-2" type="checkbox" name="terms" id="terms3" required="required">
@@ -2179,226 +2020,8 @@ window.addEventListener("progressEvent", (e) => {
     });
 </script>
 
-<!-- Start of uptownlogodesign Zendesk Widget script -->
 <script>
-window.$zopim || (function(d, s) {
-    var z = $zopim = function(c) {
-            z._.push(c)
-        },
-        $ = z.s =
-        d.createElement(s),
-        e = d.getElementsByTagName(s)[0];
-    z.set = function(o) {
-        z.set.
-        _.push(o)
-    };
-    z._ = [];
-    z.set._ = [];
-    $.async = !0;
-    $.setAttribute("charset", "utf-8");
-    $.src = "https://v2.zopim.com/?5WAg9PNISUKkmZDbkxWkWGB9zaInfMNu";
-    z.t = +new Date;
-    $.
-    type = "text/javascript";
-    e.parentNode.insertBefore($, e)
-})(document, "script");
 
-function setButtonURL() {
-    $zopim.livechat.window.show()
-}
-$zopim(function() {
-    $zopim.livechat.badge.setImage('../assets/images/chat-bubble.html');
-});
-</script>
-<!-- End of uptownlogodesign Zendesk Widget script -->
-
-
-<script>
-//     var domain_url = window.location.origin;
-// $('#popupform').submit( function(e){
-// 	e.preventDefault();
-// 	var formData = $('#popupform').serialize();
-//     console.log(formData);
-//     // var domain_url = 'https://www.superiorlogodesigns.com/';
-//     $.ajax({
-//         type: "POST",
-//         url: domain_url + '/crm/include/signup-lp7.php',
-//         data: formData,
-//         success: function(data) {
-//             $('#popupform').find('.uptownloader').hide();
-//             if (data == 'error') {
-//                 $('.packageformsubmit').after(
-//                     '<div class="alreadyerror"> Something Went Wron Please Try Again.</div>');
-//             } else if (data == 'exists') {
-//                 $('.packageformsubmit').after(
-//                     '<div class="alreadyerror"> You are already a member. <a href="https://www.superiorlogodesigns.com/">Click Here</a> to sign in.</div>'
-//                 );
-//             } else {
-//                 window.location.replace(data);
-//             }
-//         }
-//     });
-            
-// })
-
-// var domain_url = window.location.origin;
-// $('#popupform2').submit( function(e){
-// 	e.preventDefault();
-// 	var formData = $('#popupform2').serialize();
-//     console.log(formData);
-//     // var domain_url = 'https://www.superiorlogodesigns.com/';
-//     $.ajax({
-//         type: "POST",
-//         url: domain_url + '/crm/include/signup-lp7.php',
-//         data: formData,
-//         success: function(data) {
-//             $('#popupform2').find('.uptownloader').hide();
-//             if (data == 'error') {
-//                 $('.packageformsubmit').after(
-//                     '<div class="alreadyerror"> Something Went Wron Please Try Again.</div>');
-//             } else if (data == 'exists') {
-//                 $('.packageformsubmit').after(
-//                     '<div class="alreadyerror"> You are already a member. <a href="https://www.superiorlogodesigns.com/">Click Here</a> to sign in.</div>'
-//                 );
-//             } else {
-//                 window.location.replace(data);
-//             }
-//         }
-//     });
-            
-// })
-
-// var domain_url = window.location.origin;
-// $('#popupform3').submit( function(e){
-// 	e.preventDefault();
-// 	var formData = $('#popupform3').serialize();
-//     console.log(formData);
-//     // var domain_url = 'https://www.superiorlogodesigns.com/';
-//     $.ajax({
-//         type: "POST",
-//         url: domain_url + '/crm/include/signup-lp7.php',
-//         data: formData,
-//         success: function(data) {
-//             $('#popupform3').find('.uptownloader').hide();
-//             if (data == 'error') {
-//                 $('.packageformsubmit').after(
-//                     '<div class="alreadyerror"> Something Went Wron Please Try Again.</div>');
-//             } else if (data == 'exists') {
-//                 $('.packageformsubmit').after(
-//                     '<div class="alreadyerror"> You are already a member. <a href="https://www.superiorlogodesigns.com/">Click Here</a> to sign in.</div>'
-//                 );
-//             } else {
-//                 window.location.replace(data);
-//             }
-//         }
-//     });
-            
-// })
-// var domain_url = window.location.origin;
-// $('#popupform4').submit( function(e){
-// 	e.preventDefault();
-// 	var formData = $('#popupform4').serialize();
-//     console.log(formData);
-//     // var domain_url = 'https://www.superiorlogodesigns.com/';
-//     $.ajax({
-//         type: "POST",
-//         url: domain_url + '/crm/include/signup-lp7.php',
-//         data: formData,
-//         success: function(data) {
-//             $('#popupform4').find('.uptownloader').hide();
-//             if (data == 'error') {
-//                 $('.packageformsubmit').after(
-//                     '<div class="alreadyerror"> Something Went Wron Please Try Again.</div>');
-//             } else if (data == 'exists') {
-//                 $('.packageformsubmit').after(
-//                     '<div class="alreadyerror"> You are already a member. <a href="https://www.superiorlogodesigns.com/">Click Here</a> to sign in.</div>'
-//                 );
-//             } else {
-//                 window.location.replace(data);
-//             }
-//         }
-//     });
-            
-// })
-
-// var domain_url = window.location.origin;
-// $('#popupform5').submit( function(e){
-// 	e.preventDefault();
-// 	var formData = $('#popupform5').serialize();
-//     console.log(formData);
-//     // var domain_url = 'https://www.superiorlogodesigns.com/';
-//     $.ajax({
-//         type: "POST",
-//         url: domain_url + '/crm/include/signup-lp7.php',
-//         data: formData,
-//         success: function(data) {
-//             $('#popupform5').find('.uptownloader').hide();
-//             if (data == 'error') {
-//                 $('.packageformsubmit').after(
-//                     '<div class="alreadyerror"> Something Went Wron Please Try Again.</div>');
-//             } else if (data == 'exists') {
-//                 $('.packageformsubmit').after(
-//                     '<div class="alreadyerror"> You are already a member. <a href="https://www.superiorlogodesigns.com/">Click Here</a> to sign in.</div>'
-//                 );
-//             } else {
-//                 window.location.replace(data);
-//             }
-//         }
-//     });
-            
-// })
-// var domain_url = window.location.origin;
-// $('#popupform6').submit( function(e){
-// 	e.preventDefault();
-// 	var formData = $('#popupform6').serialize();
-//     console.log(formData);
-//     // var domain_url = 'https://www.superiorlogodesigns.com/';
-//     $.ajax({
-//         type: "POST",
-//         url: domain_url + '/crm/include/signup-lp7.php',
-//         data: formData,
-//         success: function(data) {
-//             $('#popupform6').find('.uptownloader').hide();
-//             if (data == 'error') {
-//                 $('.packageformsubmit').after(
-//                     '<div class="alreadyerror"> Something Went Wron Please Try Again.</div>');
-//             } else if (data == 'exists') {
-//                 $('.packageformsubmit').after(
-//                     '<div class="alreadyerror"> You are already a member. <a href="https://www.superiorlogodesigns.com/">Click Here</a> to sign in.</div>'
-//                 );
-//             } else {
-//                 window.location.replace(data);
-//             }
-//         }
-//     });
-            
-// })
-// var domain_url = window.location.origin;
-// $('#popupform7').submit( function(e){
-// 	e.preventDefault();
-// 	var formData = $('#popupform7').serialize();
-//     console.log(formData);
-//     // var domain_url = 'https://www.superiorlogodesigns.com/';
-//     $.ajax({
-//         type: "POST",
-//         url: domain_url + '/crm/include/signup-lp7.php',
-//         data: formData,
-//         success: function(data) {
-//             $('#popupform7').find('.uptownloader').hide();
-//             if (data == 'error') {
-//                 $('.packageformsubmit').after(
-//                     '<div class="alreadyerror"> Something Went Wron Please Try Again.</div>');
-//             } else if (data == 'exists') {
-//                 $('.packageformsubmit').after(
-//                     '<div class="alreadyerror"> You are already a member. <a href="https://www.superiorlogodesigns.com/">Click Here</a> to sign in.</div>'
-//                 );
-//             } else {
-//                 window.location.replace(data);
-//             }
-//         }
-//     });
-            
-// })
 $('.popup-openpack').click(function() {
 	var thisrel = $(this).attr('rel');
 
@@ -2420,6 +2043,19 @@ $(document).ready(function() {
         $(this).find('.packageformsubmit button').text('Processing...');
     });
 });
+</script>
+<script>
+function tsPlayVideo() {
+  const overlay = document.getElementById('tsVideoOverlay');
+  const thumb = document.getElementById('tsThumbnail');
+  const player = document.getElementById('tsClientVideo');
+
+  overlay.classList.add('hidden');
+  thumb.style.display = 'none';
+  player.style.display = 'block';
+  player.play();
+}
+
 </script>
 
 </body>
